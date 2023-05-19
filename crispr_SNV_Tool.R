@@ -237,7 +237,7 @@ CRISPR_Tool<-function(mutation_table, expression_table,
   # 3. Retrieve gene
   #=================================================#
   if(is.null(gene_set_dir)){
-    gene_set_tb<-read.delim("Gene_set_merged_210902.txt",
+    gene_set_tb<-read.delim("Gene_set_merged.txt",
                             sep = "\t", header = T, stringsAsFactors = F)
     gene_set_tb<-subset(gene_set_tb, gene_set_tb$Gene_set==gene_set)
     
